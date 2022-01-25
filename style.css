@@ -1,13 +1,13 @@
 * {
     margin: 0;
     padding:0;
-
+    box-sizing: border-box;
 }
 
 .nav{
     display: flex;
     width: 100vw;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: space-between;
     
 }
@@ -15,7 +15,6 @@
 #right-top-ul{
     display: flex;
     margin: 10px ;
-    /* justify-content: space-between; */
     list-style-type: none;
     align-items: center;
     
@@ -24,42 +23,71 @@
     display: flex;
 
 }
-.top-li{
-    padding-right: 10px;
-}
-
+.top-li,
 .right-li{
-    padding-left: 10px;
+    padding-right: 20px;
 }
 
-.search{
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    justify-content: center;
-    border: 1px solid blue;
-    width: 100%;
+#sign-in{
+    background-color: #528cea;
+    color: white;
+    border: none;
+    height: 35px; 
+    border-radius: 3px;
+}
+#sign-in:hover{
+    cursor: pointer;
 }
 #google-img{
     width: 275px;
-    height: 100px;
+    height: 95px;
+    margin-top: 130px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    /* position: relative; */
+}
+.search{
+    display: flex;
+    position: relative;
+    /* flex-direction: column; */
+    margin: 10px auto 0;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    width: 80%;
 }
 
-#search-input{
+input{
     width: 45%;
     height: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15px;
-    border-radius: 30px;
-    border-color: grey;
+    border-radius: 25px;
+    border-color: lightgrey;
 
 }
+input:hover{
+    box-shadow: rgb(130, 130, 130);
+}
+
+#mic{
+    height:20px; 
+    position: absolute;
+    /* border: 1px solid black; */
+    bottom: 8px;
+    right: 30%;
+}
+
+#mag-glass{
+    height:20px;
+    width:20px;
+    position: absolute;
+    bottom: 8px;
+    left: 29%;
+
+}
+
 .button-container{
     display: flex;
     justify-content: space-between;
@@ -72,14 +100,17 @@
 
 }
 button{
-    background-color: rgb(186, 186, 186);
+    background-color:rgb(231, 231, 231);
     padding: 10px 20px;
     height: 40px;
+    border: none;
+    color: grey;
 }
 button:hover{
     color: black;
-    border: 1px solid black;
-
+    border: 1px solid grey;
+    border-radius: 3px;
+    cursor: pointer;
 
 }
 
@@ -91,31 +122,45 @@ button:hover{
 }
 
 .footer{
-    background-color: grey;
+    background-color: rgb(231, 231, 231);
     height: 90px ;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
     bottom: 0;
-    position: fixed;  
+    position: fixed; 
+    color: grey; 
+    
     
 }
 .footer-nav{
     display: flex;
     justify-content: space-between;
+    height: 45px;
+    
 }
 
 .footer-right,
 .footer-left {
     display: flex;
     list-style-type: none;
-
+    
 }
 #footer-left-li{
-    padding-left: 10px;
+    padding-left: 15px;
+}
+#footer-right-li{
+    padding-right: 15px;
+    
+    
 }
 
-#footer-right-li{
-    padding-right: 10px;
+.country{
+    height: 45px;
+    /* display: flex;
+    justify-content: space-between; */
+    padding: 15px;
+    
+
 }
